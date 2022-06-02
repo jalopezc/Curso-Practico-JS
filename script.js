@@ -12,6 +12,7 @@ function perimetroCuadrado(lado){
 //Argumentos: El valor que se le manda a la funcion
 function areaCuadrado (lado){
     return lado * lado;
+    
 }
 
 //CODIGO DEL Tringulo
@@ -38,3 +39,19 @@ function areaTriangulo (base, altura){
 // const areTriangulo = (baseTriangulo * alturaTriangulo)/2;
 // console.log(`El area del triangulo es ${areTriangulo}cm`);
 console.groupEnd()
+
+//Interactuando con JS
+function perimetroC(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+function areaC(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
