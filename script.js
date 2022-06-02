@@ -1,26 +1,40 @@
 //CODIGO DEL CUADRADO
 console.group("Grupo de cuadrado");
-const ladoCuadrado = 5;
-console.log(`Los lados del cuadrado son ${ladoCuadrado}cm`);
 
-const perimetroCuadrado = ladoCuadrado * 4;
-console.log(`El perimetro del cuadrado es  ${perimetroCuadrado}cm`);
+//La funcion recibe parametros
+function perimetroCuadrado(lado){
+    return lado*4;
+}
+//console.log(`El perimetro del cuadrado es  ${perimetroCuadrado}cm`);
 
-const areaCuadrado = ladoCuadrado * ladoCuadrado;
-console.log(`El perimetro del cuadrado es  ${areaCuadrado}cm`);
-console.groupEnd();
+// const areaCuadrado = ladoCuadrado * ladoCuadrado;
+//Prametros: Lo que debe recibir la funcion
+//Argumentos: El valor que se le manda a la funcion
+function areaCuadrado (lado){
+    return lado * lado;
+}
 
-//CODIGO DEL CUADRADO
-console.group("Grupo de Triangulo");
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo = 4;
-const alturaTriangulo = 5;
+//CODIGO DEL Tringulo
+//Funcion para calcular el perimetro de un triangulo
+function perimetroTriangulo (lado1, lado2, base){
+    return lado1 + lado2 + base;
+}
 
-console.log(`Los lados del triangulo son ${ladoTriangulo1}cm,${ladoTriangulo2}cm, ${baseTriangulo}cm, ${alturaTriangulo}cm`);
+//Funcion para calcular el area del un triangulo
+function areaTriangulo (base, altura){
+    return base * altura /2;
+}
 
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
-console.log(`El perimtro del triangulo es ${perimetroTriangulo}cm`);
-const areTriangulo = (baseTriangulo * alturaTriangulo)/2;
-console.log(`El area del triangulo es ${areTriangulo}cm`);
+// console.group("Grupo de Triangulo");
+// const ladoTriangulo1 = 6;
+// const ladoTriangulo2 = 6;
+// const baseTriangulo = 4;
+// const alturaTriangulo = 5;
+
+// console.log(`Los lados del triangulo son ${lado1}cm,${lado2}cm, ${base}cm`);
+
+// const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
+// console.log(`El perimtro del triangulo es ${perimetroTriangulo}cm`);
+// const areTriangulo = (baseTriangulo * alturaTriangulo)/2;
+// console.log(`El area del triangulo es ${areTriangulo}cm`);
 console.groupEnd()
