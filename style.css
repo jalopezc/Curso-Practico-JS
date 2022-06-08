@@ -1,0 +1,29 @@
+    body{
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .calCuadrado{
+        width: 25rem;
+        background-color: rgb(226, 201, 250);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+    .digitaInfoCuadrado{
+        display: flex;
+        flex-flow: column;  
+        margin: 1rem;
+    }
+    .insideCuadrado{
+        margin: 0.3rem;
+    }
